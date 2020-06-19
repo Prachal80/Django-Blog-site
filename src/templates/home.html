@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{{title}}
+
+{{user}}
+
+{{user.is_authenticated}}
+
+{%if user.is_authenticated %}
+
+<h1>Confidential</h1>
+{% endif %}
+
+{% endblock %}
